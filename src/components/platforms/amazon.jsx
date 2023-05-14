@@ -14,17 +14,17 @@ function Amazon(props) {
     };
     try {
       const res = await axios.request(response);
-      console.log(res);
-      console.log(res.data.result);
+      //console.log(res);
+      //console.log(res.data.result);
       setData(res.data.result);
-      console.log(data);
+      //console.log(data);
     } catch (error) {
       console.log(error);
     }
   }
   useEffect(() => {
-    console.log(isMounted);
-    console.log(isMounted.current);
+    //console.log(isMounted);
+    //console.log(isMounted.current);
     if (isMounted.current) return;
     else {
       isMounted.current = true;
