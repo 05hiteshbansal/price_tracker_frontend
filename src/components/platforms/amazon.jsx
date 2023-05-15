@@ -1,7 +1,8 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
-import Card from "./card";
+import Card from "./AmazonCard.jsx";
 import axios from "axios";
+import './amazon.css';
 
 function Amazon(props) {
   const [data, setData] = useState([]);
@@ -10,7 +11,7 @@ function Amazon(props) {
     // var response= await fetch(`http://localhost:5000/api/amazon/${props.value}`)
     const response = {
       method: "GET",
-      url: `https://pricetracker-r2do.onrender.com/api/amazon/${props.value}`,
+      url:`http://localhost:5000/api/amazon/${props.value}` || `https://pricetracker-r2do.onrender.com/api/amazon/${props.value}`,
     };
     try {
       const res = await axios.request(response);
@@ -33,9 +34,9 @@ function Amazon(props) {
   }, []);
   return (
     <>
-      <div className="container my-3"  style={{backgroundColor:"#f0edd4"}}>
-        <h1 className="text-center">
-        {props.value} served from Amazon
+      <div className="amaze container my-3" >
+        <h1 className=" head text-center">
+        "{props.value}" served from Amazon!
         </h1>
         <div className="row" >
           {data.map((d, index) => (

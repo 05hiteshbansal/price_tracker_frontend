@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import Card from "./card";
-import './flipkart.css'
+import Card from "./FlipkatCard.jsx";
+import "./flipkart.css";
 //import logo from "../../media/flipkartlogo.png";
 function Flipkart(props) {
   const [data, setData] = useState([]);
@@ -35,13 +35,14 @@ function Flipkart(props) {
   return (
     <>
       <div>
-          <div className="container my-2"  style={{backgroundColor:"#f0edd4"}}>
-          <h1 className="text-center">{props.value} served from Flipkart</h1>
-              <div className="row row-cols-1 row-cols-md-2 g-4">
-        {data.map((d, index) =>
-          (
-          <>
-                <div className=" rounded col-md-4" key={index}>
+        <div className=" flipper container my-2">
+          <h1 className=" head text-center">
+            "{props.value}" served from <span className="flip">Flipkart!</span>
+          </h1>
+          <div className="row row-cols-1 row-cols-md-2 g-4">
+            {data.map((d, index) => (
+              <>
+                <div className=" rounded col-md-4 flipcard" key={index}>
                   <Card
                     name={d.name}
                     cprice={d.current_price}
@@ -49,11 +50,11 @@ function Flipkart(props) {
                     product_link={d.link}
                     image={d.thumbnail}
                   />
-              </div>
-          </>
-        ))}
-            </div>
+                </div>
+              </>
+            ))}
           </div>
+        </div>
       </div>
     </>
   );

@@ -1,4 +1,16 @@
-h1{
-    padding-top: 10px;
-    padding-bottom: 20px;
+h1 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.container {
+  border-radius: 10px;
+}
+.flip{
+    color: #047BD5;
+}
+.head{
+    color: #047BD5;
+}
+.flipper{
+    background-color: yellow;
 }

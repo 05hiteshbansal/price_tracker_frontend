@@ -1,11 +1,17 @@
-.hathi{
-    text-align: center;
-    margin-left: 40px;
-    border: 1px solid #c9c9c9;
-    border-radius: 7px;
-    box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.15);
-    background-color: #eccdb4;
+.hathi {
+  text-align: center;
+  margin-left: 40px;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.15);
+  background-color: #9632cc;
 }
-.photu{
-    padding-top: 10px;
+.photu {
+  padding-top: 10px;
+}
+.t1 {
+  background-color: #b6d7ff;
+}
+.t2 {
+  background-color: #F7A200;
 }
