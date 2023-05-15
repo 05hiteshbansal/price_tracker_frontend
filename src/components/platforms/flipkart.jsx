@@ -11,7 +11,7 @@ function Flipkart(props) {
     // var response= await fetch(`http://localhost:5000/api/amazon/${props.value}`)
     const response = {
       method: "GET",
-      url: `https://pricetracker-r2do.onrender.com/api/flipkart/${props.value}`,
+      url: `http://localhost:5000/api/flipkart/${props.value}` ||`https://pricetracker-r2do.onrender.com/api/flipkart/${props.value}`,
     };
     try {
       const res = await axios.request(response);

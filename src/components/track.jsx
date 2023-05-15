@@ -43,13 +43,13 @@ settracker(false)
             />
             <input
               placeholder="💵 Minimum price you wish to pay?"
-              type="text"
+              type="number"
               id="ibox"
               className="price form-control t1"
             />
             <input
               placeholder="✉️ Enter your e-mail id"
-              type="text"
+              type="email"
               id="ibox"
               className="price form-control t1"
             />
