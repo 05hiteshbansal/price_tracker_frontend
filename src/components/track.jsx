@@ -79,38 +79,6 @@ function Track() {
           </div>
         </form>
         <div className="col-lg-6 title-image-container">
-=======
-      <form class="row needs-validation" novalidate>
-        <div className="col-lg-6 col-sm-12">
-          <div className="searchbox search">
-            <input
-              placeholder="🛒 Enter URL of the product."
-              type="url"
-              id="ibox"
-              className="url form-control t1"
-            />
-            <input
-              placeholder="💵 Minimum price you wish to pay?"
-              type="number"
-              id="ibox"
-              className="price form-control t1"
-            />
-            <input
-              placeholder="✉️ Enter your e-mail id"
-              type="email"
-              id="ibox"
-              className="price form-control t1"
-            />
-          </div>
-
-          <button
-            type="submit" className="btn btn-primary " onClick={click1}>
-            Submit
-          </button>
-        </div>
-      
-        <div className="col-lg-6">
->>>>>>> af6c298d1b2e7ae95a29f33a6d84aed67957932c
           <h1 className="h1pop">
             Get Notified On Price Drops<br></br> Via 
              <span> E</span>
