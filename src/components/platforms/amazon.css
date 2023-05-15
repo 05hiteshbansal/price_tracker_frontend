@@ -1,6 +1,12 @@
 .amaze{
-    background-color: #E4C083;
+    background-color: #fcdeac;
 }
 .head{
     color: #00A8E1;
+}
+.amazeimage{
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    padding-bottom: 10px;
 }

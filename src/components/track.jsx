@@ -32,24 +32,24 @@ settracker(false)
 
   return (
     <div className="container-fluid">
-      <div className="row">
+      <form class="row needs-validation" novalidate>
         <div className="col-lg-6 col-sm-12">
           <div className="searchbox search">
             <input
               placeholder="🛒 Enter URL of the product."
-              type="text"
+              type="url"
               id="ibox"
               className="url form-control t1"
             />
             <input
               placeholder="💵 Minimum price you wish to pay?"
-              type="text"
+              type="number"
               id="ibox"
               className="price form-control t1"
             />
             <input
               placeholder="✉️ Enter your e-mail id"
-              type="text"
+              type="email"
               id="ibox"
               className="price form-control t1"
             />
@@ -60,12 +60,20 @@ settracker(false)
             Submit
           </button>
         </div>
-        <div className="col-lg-6 title-image-container">
+      
+        <div className="col-lg-6">
           <h1 className="h1pop">
-            Get Notified On Price Drops<br></br> Via E-Mail!
+            Get Notified On Price Drops<br></br> Via 
+             <span> E</span>
+           <span>-</span>
+            <span>M</span>
+            <span>a</span>
+            <span>i</span>
+            <span>l</span>
+            <span>!</span>
           </h1>
         </div>
-      </div>
+        </form>
 
       <div className="popup" id="popup">
         <img className="popimg" src={popdabba} alt="loading..." />
