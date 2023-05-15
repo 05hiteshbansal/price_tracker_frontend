@@ -6,11 +6,17 @@ h1 {
   border-radius: 10px;
 }
 .flip{
-    color: #047BD5;
+    display: inline-block;
 }
 .head{
     color: #047BD5;
 }
 .flipper{
-    background-color: yellow;
+    background-color: rgb(252, 252, 147);
+}
+.flipimage{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding-bottom: 10px;
 }

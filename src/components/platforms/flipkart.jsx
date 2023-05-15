@@ -37,7 +37,7 @@ function Flipkart(props) {
       <div>
         <div className=" flipper container my-2">
           <h1 className=" head text-center">
-            "{props.value}" served from <span className="flip">Flipkart!</span>
+            "{props.value}" served from Flipkart<img className="flipimage"src="/src/media/flipkart.png" alt="flipkart-logo" />
           </h1>
           <div className="row row-cols-1 row-cols-md-2 g-4">
             {data.map((d, index) => (
