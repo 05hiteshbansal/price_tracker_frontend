@@ -48,7 +48,7 @@ function Track() {
 
   return (
     <div className="container-fluid">
-<<<<<<< HEAD
+
       <div className="row">
         <form>
           <div className="col-lg-6 col-sm-12">
