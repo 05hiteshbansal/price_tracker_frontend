@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import Card from "./AmazonCard.jsx";
 import axios from "axios";
 import './amazon.css';
+import logo from "/src/media/amazon.png"
 
 function Amazon(props) {
   const [data, setData] = useState([]);
@@ -36,7 +37,7 @@ function Amazon(props) {
     <>
       <div className="amaze container my-3" >
         <h1 className=" head text-center">
-        "{props.value}" served from Amazon <img className="amazeimage"src="/src/media/amazon.png" alt="amazon-logo" />
+        "{props.value}" served from Amazon <img className="amazeimage"src={logo} alt="amazon-logo" />
         </h1>
         <div className="row" >
           {data.map((d, index) => (
