@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import Card from "./FlipkatCard.jsx";
 import "./flipkart.css";
-//import logo from "../../media/flipkartlogo.png";
+import logo from "/src/media/flipkart.png";
 function Flipkart(props) {
   const [data, setData] = useState([]);
   const isMounted = useRef(false);
@@ -37,7 +37,7 @@ function Flipkart(props) {
       <div>
         <div className=" flipper container my-2">
           <h1 className=" head text-center">
-            "{props.value}" served from Flipkart<img className="flipimage"src="/src/media/flipkart.png" alt="flipkart-logo" />
+            "{props.value}" served from Flipkart<img className="flipimage"src={logo} alt="flipkart-logo" />
           </h1>
           <div className="row row-cols-1 row-cols-md-2 g-4">
             {data.map((d, index) => (
