@@ -14,7 +14,7 @@ function Track() {
           email: document.getElementsByClassName("t1")[2].value
         };
         await axios
-        .post("http://localhost:5000/track", {data})
+        .post("http://localhost:5000/track" || "https://pricetracker-r2do.onrender.com/tracker", {data})
         .then((res) => {console.log(res)
       console.log(res.data)})
         .catch((err) => console.log(err.data));
