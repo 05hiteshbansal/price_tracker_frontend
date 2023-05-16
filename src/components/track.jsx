@@ -80,13 +80,13 @@ function Track() {
         <div className="col-lg-6">
           <h1 className="h1pop">
             Get Notified On Price Drops<br></br> Via 
-             <span> E</span>
-           <span>-</span>
-            <span>M</span>
-            <span>a</span>
-            <span>i</span>
-            <span>l</span>
-            <span>!</span>
+             <span className="jump"> E</span>
+           <span className="jump">-</span>
+            <span className="jump">M</span>
+            <span className="jump">a</span>
+            <span className="jump">i</span>
+            <span className="jump">l</span>
+            <span className="jump">!</span>
           </h1>
         </div>
         </form>
